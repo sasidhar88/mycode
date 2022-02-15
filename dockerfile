@@ -1,2 +1,2 @@
 FROM tomcat
-COPY  target/*.war /usr/local/tomcat/webapps/qaenv.war
+COPY target/*.war /usr/local/tomcat/webapps/qaenv.war
