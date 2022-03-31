@@ -1,0 +1,20 @@
+job('mymavendsl') {
+    description('this is my mavendsl job')
+ scm{
+     git('https://github.com/sasidhar88/mycode.git', 'master')
+ }
+ steps{
+     maven{
+    mavenInstallation('Maven')
+     goals('-B -DskipTest clean package')
+     }
+ }
+
+ steps{
+     maven{
+     mavenInstallation('maven')
+     goals('test')
+     }
+ }
+
+}
