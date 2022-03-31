@@ -1,4 +1,4 @@
-job('mymavendsl') {
+job('mymavendsl001') {
     description('this is my mavendsl job')
  scm{
      git('https://github.com/sasidhar88/mycode.git', 'master')
